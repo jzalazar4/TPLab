@@ -5,13 +5,17 @@
     "bootstrap": "^5.3.3",
     "date-fns": "^3.6.0",
     "vue-axios": "^3.5.2",
+    "vue-moment": "^4.1.0",
     "vue-router": "^4.3.0",
+    "vuelidate": "^0.7.7",
+    "vuex": "^4.1.0",
     "webpack": "^5.90.3"
   },
   "scripts": {
     "serve": "vue-cli-service serve"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.24.0"
+    "@babel/preset-env": "^7.24.0",
+    "@types/vuelidate": "^0.7.21"
   }
 }

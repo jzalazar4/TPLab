@@ -58,13 +58,15 @@ createApp(App).mount('#app');*/
 
 import { createApp } from 'vue'
 import App from './App.vue'
+
 import router from './routes/routes.js'
 import * as axios from 'axios'
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap"
+import Vuelidate from 'vuelidate'
 //const axiosInstance = axios.create({ timeout: 15000 })
 
-axios.default.baseURL = 'http://localhost:8082/*'; 
+axios.default.baseURL = 'http://localhost:8082/'; 
 createApp(App).use(router).mount('#app')
 //createApp(App).use(router).mount('#app')
 //const app = createApp(RootComponent)

@@ -16,7 +16,7 @@
           aria-current="page">Inicio</router-link>
         </li>
   
-                                    <!--LIBROS--->
+                                    <!--LIBROS-->
 
           <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -62,8 +62,8 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><router-link to="/crearP" class="dropdown-item">Nuevo préstamo</router-link></li>
-                <li><router-link to="/mostrarP" class="dropdown-item">Ver préstamos</router-link></li>
-                
+                <li><router-link to="/mostrarP" class="dropdown-item">Préstamos activos</router-link></li>
+                <li><router-link to="/mostrarPfin" class="dropdown-item">Préstamos finalizados</router-link></li>
                 
               </ul>
           </li>
@@ -92,6 +92,8 @@ import EditarUser from './components/user/EditarUser.vue'
 import CrearPrestamo from './components/prestamo/CrearPrestamo.vue'
 import EditarPrestamo from './components/prestamo/EditarPrestamo.vue'
 import MostrarPrestamo from './components/prestamo/MostrarPrestamo.vue'
+import PrestamoFin from './components/prestamo/PrestamoFin.vue'
+import PrestamoFinForm from './components/prestamo/PrestamoFinForm.vue'
 
   export default {
     components:{
@@ -103,7 +105,9 @@ import MostrarPrestamo from './components/prestamo/MostrarPrestamo.vue'
       EditarUser,
       CrearPrestamo,
       EditarPrestamo,
-      MostrarPrestamo
+      MostrarPrestamo,
+      PrestamoFin,
+      PrestamoFinForm
     }
   }
 </script>

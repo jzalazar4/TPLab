@@ -7,7 +7,7 @@
                     <div class="card-body">
                         <form @submit.prevent="crear">
                             <router-link v-if="typeof post !== 'undefined'"></router-link>
-                           
+                          
                             <label for="libros">Libros</label>
                             <select class="form-select" aria-label="Default select example"  v-model="libroElegido">
                                 <option value="" disabled selected>Seleccione una opción</option>

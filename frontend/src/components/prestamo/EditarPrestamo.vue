@@ -5,7 +5,7 @@
                 <h4>Editar préstamo</h4>
             </div>
             <div class="card-body">
-            
+          
                 <form @submit.prevent="actualizar">
                     <div class="row">
                         <div class="col-12 mb-2">

@@ -108,7 +108,10 @@ export default {
         this.$router.push(`/editP/${pid}`);
       },
       devolver(pid) {
-  
+        
+        this.$router.push(`/form/${pid}`);
+
+  /*
         if(confirm ('¿Desea registrar la devolución de este libro?')){
           axios.put(`http://localhost:8082/prestamo/devolver/${pid}`, this.prestamo)  
           .then(response => {
@@ -119,10 +122,10 @@ export default {
             .catch(error => {
           
               console.error('Error al devolver el libro:', error);
-            });
+            });*/
         
-      }
-    },
+      },
+    
   },
 
 };

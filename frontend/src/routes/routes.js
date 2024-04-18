@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Inicio from '../components/Inicio.vue'
+
+import Inicio from '../Inicio.vue'
 
         // LIBROS
 import CrearLibro from '../components/libros/CrearLibro.vue'
@@ -15,7 +16,8 @@ import EditarUser from '../components/user/EditarUser.vue'
 import CrearPrestamo from '../components/prestamo/CrearPrestamo.vue'
 import EditarPrestamo from '../components/prestamo/EditarPrestamo.vue'
 import MostrarPrestamo from '../components/prestamo/MostrarPrestamo.vue'
-
+import PrestamoFin from '../components/prestamo/PrestamoFin.vue'
+import PrestamoFinForm from '../components/prestamo/PrestamoFinForm.vue'
 
 const routes = [
     {
@@ -71,8 +73,17 @@ const routes = [
         path: '/mostrarP',
         component: MostrarPrestamo
     },
-
+    {
+        name: 'mostrarPfin',
+        path: '/mostrarPfin',
+        component: PrestamoFin
+    },{
+        name: 'form',
+        path: '/form/:pid',
+        component: PrestamoFinForm
+    },
 
 ]
 const router = createRouter({ history: createWebHistory(), routes })
+
 export default router
